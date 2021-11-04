@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Dev Company</title>
+</head>
+<body>
+    <header> 
+        <h1>Dev Company</h1>
+    </header>
+    <section>
+        <div class="box">
+            <div class="container">
+                <input type="file" id="img">
+                <label>
+                    Nome:
+                    <input type="text" id="name" placeholder="Digite o nome do funcionário" maxlength="25">
+                </label>
+                <label>
+                    Função:
+                    <input type="text" id="office" placeholder="Digite o nome da função" maxlength="25">
+                </label>
+                <button id="send">
+                    Enviar
+                </button>
+            </div> 
+        </div>
+    </section>
+
+    <main>
+        <section class="section-container">
+            <div class="circle"></div>
+            </div>
+            <div class="logo">
+                <p>DC</p>  
+            </div>
+            <div class="image" id="image">
+                <!--imagem via JS-->
+            </div>
+            <div class="name">
+                <p>NOME</p>
+                <div class="area-name"></div>
+            </div>
+            <div class="office">
+                <p>FUNÇÃO</p>
+                <div class="area-office"></div>
+            </div>
+            <div class="company">
+                <p>&copy; Dev Company 2021</p>
+            </div>   
+        </section>
+    </main>
+
+    <section class="print">
+        <div class="areaPrint">
+            <img onclick="print()" src="img/printer.svg" alt="Icone de impressora">
+        </div>
+    </section>
+
+    <footer>
+        <p>Criador por Dievan Martins</p>
+        <div class="social">
+            <a href="https://github.com/DievanMartins"><img src="img/github.svg" alt="Ícone do Github"></a>
+            <a href="https://www.linkedin.com/in/dievanmartins"><img src="img/linkedin.svg" alt="Ícone do Linkedin"></a>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

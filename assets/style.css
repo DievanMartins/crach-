@@ -1,0 +1,232 @@
+/* ROOT */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*VARIABLES*/
+:root{
+    --color-header:#2a3447;
+    --color-gray: #d4d3d3;
+    --color-white: #fff;
+    --color-card:#6d849c;
+    --text-color:#121212;
+    --color-button: #3ce263;
+    --button-hover:#28a745;
+}
+
+/* LAYOUT */
+body{
+    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+header{
+    background: var(--color-header);
+    height: 4rem;
+}
+
+h1{
+    color: var(--color-white);
+    text-align: center;
+    padding-top: 0.6rem;
+    text-transform: uppercase;
+}
+
+/* FORM */
+.box{
+    width: 100%;
+}
+
+.container{
+    margin: auto;
+    width: 80%;
+    height: 6rem;
+    background: var(--color-gray);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 5px 5px rgba(0, 0 , 0, .3 );
+}
+
+.container #img{
+    cursor: pointer;
+}
+
+.container label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+input{
+    width: 15rem;
+    height: 2rem;
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#send{
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    background: var(--color-button);
+    color: var(--color-white);
+    transition: 0.5s;
+}
+
+#send:hover{
+    background: var(--button-hover);
+}
+
+/* MAIN */
+main{
+    margin-top: 1rem;
+}
+
+.section-container{
+    width: 12.8125rem;
+    height: 20.3125rem;
+    background: linear-gradient(var(--color-card), var(--color-header));
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #000;
+}
+
+.circle{
+    width: 15%;
+    height: 2%;
+    background: var(--text-color);
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    border: 1px dashed #fff;
+}
+
+.logo{
+    font-size: 1.5rem;
+    background: var(--color-white);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.logo p{
+    font-weight: 600;
+}
+
+.image{
+    height: 6rem;
+    width: 5rem;
+    object-fit: cover;
+    background: var(--color-white);
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.name, .office{
+    width: 100%;
+}
+
+.name p, .office p{
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    margin-left: 1rem;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.area-name, .area-office{
+    width: 94%;
+    height: 1.8rem;
+    margin: auto;
+    font-size: 0.9rem;
+    padding: 0.3rem ;
+    background: var(--color-white);
+    margin-top: 0.3rem;
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+.company{
+    margin-top: 0.5rem;
+}
+
+.company p{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+/* PRINT */
+.print{
+    position: relative;
+}
+
+.areaPrint img{
+    width: 3.5rem;
+    position: absolute;
+    right: 3rem;
+    bottom: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.areaPrint img:hover{
+    width: 4.5rem;
+}
+
+/* FOOTER */
+footer{
+    background: var(--color-header);
+    height: 4.25rem;
+    margin-top: 3rem;
+    padding-top: 0.3rem;
+    text-align: center;
+}
+
+footer p{
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--color-white);
+}
+
+.social{
+    margin-bottom: 0.3rem;
+}
+
+.social a img{
+    width: 2rem;
+    background: var(--color-white);
+    border-radius: 80%;
+}
+
+.social a img:last-child{
+    margin-left: 0.3rem;
+}
+
+@media print{
+    header,
+    .box,
+    .print,
+    footer{
+      display: none;
+    }
+}
